@@ -11,7 +11,7 @@ sounds.forEach(sound => {
         document.getElementById(sound).play()
     })
 
-    document.getElementById('buttons').appendChild(btn)
+    document.getElementById('buttons').appendChild(btn)//put all the btn in the div buttons
 })
 function stopSongs() {// to pause the over sound
     sounds.forEach(sound => {
