@@ -1,11 +1,17 @@
-function drawCanvas(){
-    let canvas=document.getElementById('canvas');
-    if (canvas.getContext) {
-        var ctx = canvas.getContext('2d');
-
-        ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(10, 10, 50, 50);
-    }else{
-        return ;
+const test={
+    frases:["vai  corinthians"," vai furia","vai brasil"],
+    pickFrases(){
+        const {frases}=this;//frase=test.frases
+        const idx=Math.floor(Math.random()*frases.length);
+        return frases[idx];
     }
 }
+
+const hero = {
+    name: 'Batman',
+    realName: 'Bruce Wayne',
+    showName(){
+        const {name}=this;
+        return `nome: ${name}`;
+    }
+  };
